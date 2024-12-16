@@ -16,6 +16,6 @@ jobs:
       - name: Test
         run: deno test --allow-read --allow-write
 
+      ## The --allow-dirty is needed here because in CI the deno.lock file may be modified
       - name: JSR check
-        run: deno publish --dry-run
-        
+        run: deno publish --dry-run --allow-dirty
