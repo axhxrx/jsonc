@@ -1,6 +1,6 @@
 {
-  "name": "@axhxrx/jsonc"
+  "name": "@axhxrx/jsonc",
   "version": "0.0.1",
-  "exports": "mod.ts",
-  "license": "MIT",
+  "exports": "./mod.ts",
+  "license": "MIT"
 }
