@@ -1,4 +1,4 @@
-export * from 'npm:jsonc-parser';
+export * from 'jsonc-parser';
 
 export * from './JSONCFormatter.ts';
 export * from './JSONCTweaker.ts';
