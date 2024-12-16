@@ -1,0 +1,30 @@
+{
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 120,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  // there is a trailing comma above, and some below, that is OK in JSONC we think
+  "name": "John Doe",
+  "age": 30,
+  "girlfrends": {
+    "Bethyl": {
+      "age": 20,
+      "hobbies": [
+        "reading",
+        "writing",
+      ],
+    },
+    "Gertrude": {
+      "age": 21,
+      "hobbies": [
+        "boxing",
+        "tae kwon do",
+      ],
+    }
+  },
+}

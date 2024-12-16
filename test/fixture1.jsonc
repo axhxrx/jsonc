@@ -1,0 +1,30 @@
+{
+  "fmt": {
+    "options": {
+      "useTabs": false,
+      "lineWidth": 120,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "preserve"
+    }
+  },
+  // This bit is required for Hono JSX  https://hono.dev/docs/guides/jsx
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "workspace": [
+    "bot",
+    "command-runner",
+    "jsonc-formatter",
+    "safe-walk",
+    "validated-string"
+  ],
+  "unstable": [
+    "kv"
+  ],
+  "nodeModulesDir": "none",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.9"
+  }
+}
