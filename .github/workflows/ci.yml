@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: ["*"]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Test
+        run: deno test --allow-read --allow-write
+
+      - name: JSR check
+        run: deno publish --dry-run
+        
