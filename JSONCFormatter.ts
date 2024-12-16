@@ -1,4 +1,4 @@
-import * as JSONCParser from 'npm:jsonc-parser';
+import * as JSONCParser from 'jsonc-parser';
 import { DefaultFormattingOptions } from './DefaultFormattingOptions.ts';
 
 /**

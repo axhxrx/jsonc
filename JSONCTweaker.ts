@@ -1,5 +1,5 @@
 import { applyEdits, modify, parse, type Segment } from 'jsonc-parser';
-import type { ParseError } from 'npm:jsonc-parser';
+import type { ParseError } from 'jsonc-parser';
 import { DefaultFormattingOptions } from './DefaultFormattingOptions.ts';
 import { getAlphabeticalInsertionIndex } from './getAlphabeticalInsertionIndex.ts';
 import { getValueAtPath } from './getValueAtPath.ts';
