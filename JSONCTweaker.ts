@@ -13,7 +13,7 @@ export interface InsertArrayValueOptions
 }
 
 /**
- A convenience class for working with JSONC files — based on the Microsoft JSONC parser (https://github.com/microsoft/node-jsonc-parser) but more convenient to use for certain specific tasks.
+ A convenience class for working with JSONC files — based on the Microsoft JSONC parser (https://github.com/microsoft/node-jsonc-parser) but more convenient to use for certain specific tasks, like "insert string "ho ho ho" into the array at `hoge.hige.hage` if it doesn't already exist".
  */
 export class JSONCTweaker
 {
