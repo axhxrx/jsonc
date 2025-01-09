@@ -16,17 +16,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Publish package
-        id: publish
-        run: |
-          OUTPUT=$(npx jsr publish 2>&1)
-          echo "$OUTPUT"
-          if echo "$OUTPUT" | grep -q "Skipping, already published"; then
-            echo "SKIPPED=true" >> $GITHUB_OUTPUT
-          else
-            echo "SKIPPED=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Check if skipped
-        if: steps.publish.outputs.SKIPPED == 'true'
-        run: exit 78 # old way to mark a job as skipped
-        
+        run: npx jsr publish
